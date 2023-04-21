@@ -1,6 +1,6 @@
 import { Route, Router } from 'wouter';
 import App from './App';
-import { AlertComponent } from './pages';
+import { AlertComponent, Footer } from './pages';
 
 export const PageRouter = () => {
   return (
@@ -10,6 +10,9 @@ export const PageRouter = () => {
       </Route>
       <Route path='/alert'>
         <AlertComponent />
+      </Route>
+      <Route path='/footer'>
+        <Footer />
       </Route>
     </Router>
   );
