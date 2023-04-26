@@ -1,6 +1,6 @@
 import { Route, Router } from 'wouter';
 import App from './App';
-import { AlertComponent, Footer, Header, Pagination } from './pages';
+import { AlertComponent, Footer, Header, Pagination, ProgressBar } from './pages';
 
 export const PageRouter = () => {
   return (
@@ -19,6 +19,9 @@ export const PageRouter = () => {
       </Route>
       <Route path='/pagination'>
         <Pagination />
+      </Route>
+      <Route path='/progressbar'>
+        <ProgressBar />
       </Route>
     </Router>
   );
