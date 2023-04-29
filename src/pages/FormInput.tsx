@@ -4,6 +4,7 @@ import { BaseSyntheticEvent, useState } from 'react';
 import { FormControl, InputGroup } from 'react-bootstrap';
 
 export enum FormInputType {
+  Number = 'number',
   Text = 'text',
 }
 
@@ -12,8 +13,12 @@ type FormInputProps = {
 };
 
 export const FormInput = ({ type }: FormInputProps) => {
+  const [numberInputValue, setNumberInputValue] = useState(0);
   const [textInputValue, setTextInputValue] = useState('');
 
+  const handleNumberInputValueChange = ({ target }: BaseSyntheticEvent) => {
+    setNumberInputValue(target.value);
+  };
   const handleTextInputValueChange = ({ target }: BaseSyntheticEvent) => {
     setTextInputValue(target.value);
   };
@@ -22,6 +27,17 @@ export const FormInput = ({ type }: FormInputProps) => {
   };
 
   switch (type) {
+    case FormInputType.Number:
+      return (
+        <FormControl
+          className='w-25 mt-3 ms-3'
+          type={type.toString()}
+          name='numberInput'
+          value={numberInputValue}
+          min='0'
+          onChange={handleNumberInputValueChange}
+        />
+      );
     case FormInputType.Text:
     default:
       return (

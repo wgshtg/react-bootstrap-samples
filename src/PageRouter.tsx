@@ -32,6 +32,7 @@ export const PageRouter = () => {
         <ProgressBar />
       </Route>
       <Route path='/formInput'>
+        <FormInput type={FormInputType.Number} />
         <FormInput type={FormInputType.Text} />
       </Route>
     </Router>
