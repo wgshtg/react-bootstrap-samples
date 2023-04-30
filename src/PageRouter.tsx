@@ -8,6 +8,7 @@ import {
   Header,
   Pagination,
   ProgressBar,
+  Select,
 } from './pages';
 
 export const PageRouter = () => {
@@ -34,6 +35,9 @@ export const PageRouter = () => {
       <Route path='/formInput'>
         <FormInput type={FormInputType.Number} />
         <FormInput type={FormInputType.Text} />
+      </Route>
+      <Route path='/select'>
+        <Select />
       </Route>
     </Router>
   );
