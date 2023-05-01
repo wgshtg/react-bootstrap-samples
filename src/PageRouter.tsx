@@ -6,6 +6,7 @@ import {
   FormInput,
   FormInputType,
   Header,
+  Modal,
   Pagination,
   ProgressBar,
   Select,
@@ -38,6 +39,9 @@ export const PageRouter = () => {
       </Route>
       <Route path='/select'>
         <Select />
+      </Route>
+      <Route path='/modal'>
+        <Modal />
       </Route>
     </Router>
   );
