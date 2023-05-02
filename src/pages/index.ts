@@ -6,3 +6,4 @@ export * from './Modal';
 export * from './Pagination';
 export * from './ProgressBar';
 export * from './Select';
+export * from './Table';

@@ -10,6 +10,7 @@ import {
   Pagination,
   ProgressBar,
   Select,
+  Table,
 } from './pages';
 
 export const PageRouter = () => {
@@ -42,6 +43,9 @@ export const PageRouter = () => {
       </Route>
       <Route path='/modal'>
         <Modal />
+      </Route>
+      <Route path='/table'>
+        <Table />
       </Route>
     </Router>
   );
