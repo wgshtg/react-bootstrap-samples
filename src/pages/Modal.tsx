@@ -1,12 +1,6 @@
 import { useState } from 'react';
-import {
-  Modal as BaseModal,
-  Button,
-  ModalBody,
-  ModalFooter,
-  ModalHeader,
-  ModalTitle,
-} from 'react-bootstrap';
+import { Modal as BaseModal, Button, ModalBody, ModalHeader, ModalTitle } from 'react-bootstrap';
+import { ModalFooter } from '../components';
 
 export const Modal = () => {
   const [modalShow, setModalShow] = useState(false);
@@ -25,7 +19,7 @@ export const Modal = () => {
           <ModalTitle>Modal Title</ModalTitle>
         </ModalHeader>
         <ModalBody>Modal Body</ModalBody>
-        <ModalFooter>Modal Footer</ModalFooter>
+        <ModalFooter handleModalHide={handleModalHide} />
       </BaseModal>
     </div>
   );
