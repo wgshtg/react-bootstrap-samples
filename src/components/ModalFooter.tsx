@@ -57,6 +57,28 @@ export const ModalFooter = ({ handleModalHide }: ModalFooterProps) => {
           Agree
         </Button>
       </BaseModalFooter>
+      <BaseModalFooter>
+        <div className='me-auto w-25'>
+          {Array.from({ length: 3 }, (_, i) => i).map((_, index) => {
+            return (
+              <Button
+                key={index}
+                className={`rounded-pill p-1 me-1 ${index !== indicatorIndex && 'border'}`}
+                style={{ width: index !== indicatorIndex ? '1rem' : '2rem', height: '1rem' }}
+                variant={index !== indicatorIndex ? 'light' : 'dark'}
+                value={index}
+                onClick={handleIndicatorClick}
+              ></Button>
+            );
+          })}
+        </div>
+        <Button variant='secondary' onClick={handleFooterButtonClick}>
+          Cancel
+        </Button>
+        <Button variant='primary' onClick={handleFooterButtonClick}>
+          Agree
+        </Button>
+      </BaseModalFooter>
     </>
   );
 };
