@@ -8,6 +8,7 @@ import {
   Header,
   Modal,
   Pagination,
+  Popover,
   ProgressBar,
   Select,
   Table,
@@ -46,6 +47,9 @@ export const PageRouter = () => {
       </Route>
       <Route path='/table'>
         <Table />
+      </Route>
+      <Route path='/popover'>
+        <Popover />
       </Route>
     </Router>
   );
