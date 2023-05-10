@@ -1,26 +1,19 @@
 import { useState } from 'react';
-import { Modal as BaseModal, Button, ModalBody, ModalHeader, ModalTitle } from 'react-bootstrap';
-import { ModalFooter } from '../components';
+import { Button } from 'react-bootstrap';
+import { BaseModal } from '../components';
 
 export const Modal = () => {
-  const [modalShow, setModalShow] = useState(false);
+  const [show, setShow] = useState(false);
 
-  const handleBtnClick = () => setModalShow(true);
-  const handleModalHide = () => setModalShow(false);
+  const handleClick = () => setShow(true);
+  const handleModalHide = () => setShow(false);
 
   return (
     <div>
-      <Button className='m-5' onClick={handleBtnClick}>
-        Show modal
+      <Button className='m-5' onClick={handleClick}>
+        Show Modal
       </Button>
-      {/* onHide 效果是在 Modal 外面空白處點擊時觸發，設定 Modal 顯示為 false */}
-      <BaseModal show={modalShow} centered backdrop onHide={handleModalHide}>
-        <ModalHeader>
-          <ModalTitle>Modal Title</ModalTitle>
-        </ModalHeader>
-        <ModalBody>Modal Body</ModalBody>
-        <ModalFooter handleModalHide={handleModalHide} />
-      </BaseModal>
+      <BaseModal show={show} handleHide={handleModalHide}></BaseModal>
     </div>
   );
 };
