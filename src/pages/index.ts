@@ -3,6 +3,7 @@ export * from './Footer';
 export * from './FormInput';
 export * from './Header';
 export * from './Modal';
+export * from './ModalWithBody';
 export * from './Pagination';
 export * from './Popover';
 export * from './ProgressBar';

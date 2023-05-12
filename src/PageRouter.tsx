@@ -7,6 +7,7 @@ import {
   FormInputType,
   Header,
   Modal,
+  ModalWithBody,
   Pagination,
   Popover,
   ProgressBar,
@@ -35,6 +36,7 @@ export const PageRouter = () => {
       </Route>
       <Route path='/modal'>
         <Modal />
+        <ModalWithBody />
       </Route>
       <Route path='/pagination'>
         <Pagination />
