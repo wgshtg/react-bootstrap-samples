@@ -1,0 +1,21 @@
+{
+    "files.watcherExclude": {
+        "**/node_modules": true
+    },
+    "editor.formatOnSave": true,
+    // sort imports and automatically remove
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "trailing-spaces.trimOnSave": true,
+    "editor.minimap.enabled": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+}
