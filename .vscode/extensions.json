@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "shardulm94.trailing-spaces",
+        "esbenp.prettier-vscode",
+        "wix.vscode-import-cost",
+        "unional.vscode-sort-package-json",
+        "pflannery.vscode-versionlens"
+    ]
+}
