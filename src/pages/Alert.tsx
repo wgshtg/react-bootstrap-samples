@@ -4,7 +4,7 @@ export const AlertComponent = () => {
   return (
     <Alert
       variant="danger"
-      className="text-center position-absolute top-50 start-50 translate-middle p-5"
+      className="text-center p-5"
       dismissible
     >
       <Alert.Heading className="text-center">Alert Heading</Alert.Heading>

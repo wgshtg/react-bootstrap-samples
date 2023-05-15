@@ -23,7 +23,9 @@ export const PageRouter = () => {
         <App />
       </Route>
       <Route path='/alert'>
-        <AlertComponent />
+        <div className='top-50 start-50 position-absolute translate-middle'>
+          <AlertComponent />
+        </div>
       </Route>
       <Route path='/footer'>
         <Footer />
