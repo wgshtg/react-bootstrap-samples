@@ -30,7 +30,6 @@ export const FormInput = ({ type }: FormInputProps) => {
     case FormInputType.Number:
       return (
         <FormControl
-          className='w-25 mt-3 ms-3'
           type={type.toString()}
           name='numberInput'
           value={numberInputValue}
@@ -41,7 +40,7 @@ export const FormInput = ({ type }: FormInputProps) => {
     case FormInputType.Text:
     default:
       return (
-        <InputGroup className='w-25 mt-3 ms-3 '>
+        <InputGroup>
           <FormControl
             className='border-end-0'
             type={type}

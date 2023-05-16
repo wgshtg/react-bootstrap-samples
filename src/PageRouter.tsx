@@ -31,8 +31,11 @@ export const PageRouter = () => {
         <Footer />
       </Route>
       <Route path='/formInput'>
-        <FormInput type={FormInputType.Number} />
-        <FormInput type={FormInputType.Text} />
+        <div className='w-25 mt-3 ms-3'>
+          <FormInput type={FormInputType.Number} />
+          <p />
+          <FormInput type={FormInputType.Text} />
+        </div>
       </Route>
       <Route path='/header'>
         <Header />
