@@ -41,9 +41,11 @@ export const PageRouter = () => {
         <Header />
       </Route>
       <Route path='/modal'>
-        <Modal />
-        <ModalWithBody />
-        <ModalWithFooter />
+        <div className='m-5'>
+          <Modal />
+          <ModalWithBody />
+          <ModalWithFooter />
+        </div>
       </Route>
       <Route path='/pagination'>
         <Pagination />

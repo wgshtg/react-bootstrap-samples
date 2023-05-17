@@ -10,9 +10,7 @@ export const Modal = () => {
 
   return (
     <div>
-      <Button className='m-5' onClick={handleClick}>
-        Show Modal
-      </Button>
+      <Button onClick={handleClick}>Show Modal</Button>
       <BaseModal show={show} handleHide={handleModalHide}></BaseModal>
     </div>
   );
