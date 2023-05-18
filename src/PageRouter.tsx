@@ -48,7 +48,9 @@ export const PageRouter = () => {
         </div>
       </Route>
       <Route path='/pagination'>
-        <Pagination />
+        <div className='m-5'>
+          <Pagination />
+        </div>
       </Route>
       <Route path='/popover'>
         <Popover />
