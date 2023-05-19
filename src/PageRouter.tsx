@@ -53,7 +53,9 @@ export const PageRouter = () => {
         </div>
       </Route>
       <Route path='/popover'>
-        <Popover />
+        <div className='m-3'>
+          <Popover />
+        </div>
       </Route>
       <Route path='/progressbar'>
         <ProgressBar />

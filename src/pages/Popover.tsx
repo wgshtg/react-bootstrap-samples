@@ -15,11 +15,9 @@ export const Popover = () => {
   );
 
   return (
-    <div className='m-3'>
-      {/* 當點擊 overlay 範圍以外的地方時，觸發 onHide 事件，一般行為是關閉 overlay 顯示 */}
-      <OverlayTrigger overlay={popover} placement='right' trigger='click' rootClose>
-        <Button variant='success'>Show popover</Button>
-      </OverlayTrigger>
-    </div>
+    // 當點擊 overlay 範圍以外的地方時，觸發 onHide 事件，一般行為是關閉 overlay 顯示
+    <OverlayTrigger overlay={popover} placement='right' trigger='click' rootClose>
+      <Button variant='success'>Show popover</Button>
+    </OverlayTrigger>
   );
 };
