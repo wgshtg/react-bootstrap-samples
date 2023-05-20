@@ -61,7 +61,9 @@ export const PageRouter = () => {
         <ProgressBar />
       </Route>
       <Route path='/select'>
-        <Select />
+        <div className='m-5 w-25'>
+          <Select />
+        </div>
       </Route>
       <Route path='/table'>
         <Table />

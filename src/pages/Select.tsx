@@ -13,7 +13,7 @@ export const Select = () => {
   };
 
   return (
-    <FormSelect className='m-5 w-25' onChange={handleChange} name='select1' value={currentValue}>
+    <FormSelect onChange={handleChange} name='select1' value={currentValue}>
       <option value=''>selct option placeholder</option>
       {options.map((option) => {
         return (
