@@ -66,7 +66,9 @@ export const PageRouter = () => {
         </div>
       </Route>
       <Route path='/table'>
-        <Table />
+        <div className='p-5'>
+          <Table />
+        </div>
       </Route>
     </Router>
   );
